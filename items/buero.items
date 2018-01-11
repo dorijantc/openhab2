@@ -1,0 +1,16 @@
+// buero.items / 11012018
+// Christian Keil <christian.keil@gmail.com>
+// Devices : Buero im Keller
+// 
+
+// Gruppe fuer Buero
+
+Group:Number:AVG	Buero		"Buero"
+
+
+Group	BUERO_HEIZUNG	"Heizung Buero"		<heating>	(Buero)
+
+
+// Zustaende
+Group:Number:AVG	CTRL_Heating
+
