@@ -7,7 +7,8 @@ sitemap buero label="Darmstadt"
 {
   Frame label="Büro" {
     Group item=BUERO_HEIZUNG
-    Setpoint item=BUERO_HEIZUNG_SET_TEMPERATURE minValue=17 maxValue=28 step=0.5
+    Setpoint item=BUERO_HEIZUNG_SET_POINT_MODE mappings=[0="Auto", 1="Manual"]
+	Setpoint item=BUERO_HEIZUNG_SET_POINT_TEMPERATURE minValue=17 maxValue=28 step=0.5
     Switch item=BUERO_HEIZUNG_Scene_Heating mappings=[0="Normal", 1="Baden", 2="Eco", 3="Comfort"]
   }
 }
