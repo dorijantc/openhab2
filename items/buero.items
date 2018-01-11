@@ -42,19 +42,19 @@ Switch	BUERO_STATE_COMFORT	(CTRL_Heating)		{ homematic="address=HmIP-STH:252c130
 //---------------------------------------------------------------------------------------------------------------
 // Und alle Werte auslesen, die moeglich sind
 // Der Sollwert
-Number	BUERO_HEIZUNG_SET_TEMPERATURE	"Temperatur manuell einstellen [%.1f °C]"	<temperature>	{ homematic="address=HmIP-STH:252c1307:000E5569A246BE, channel=1, parameter=SET_POINT_TEMPERATURE" }
+Number	BUERO_HEIZUNG_SET_POINT_TEMPERATURE	"Temperatur manuell einstellen [%.1f °C]"	<temperature>	{ homematic="address=HmIP-STH:252c1307:000E5569A246BE, channel=1, parameter=SET_POINT_TEMPERATURE" }
 
 // Der aktuell gemessene Wert
 Number	BUERO_HEIZUNG_ACTUALTEMP	"Aktuell gemessene Temperatur [%.1f °C]"	<temperature>   (BUERO_Heizung)	{ homematic="address=HmIP-STH:252c1307:000E5569A246BE, channel=1, parameter=ACTUAL_TEMPERATURE" }
 
 // Der aktuelle Modus
-String	BUERO_HEIZUNG_MODE		"Modus [MAP(HM-CC-RT-DN.map):%s]"		<heating>	(BUERO_Heizung)	{ homematic="address=HmIP-STH:252c1307:000E5569A246BE, channel=1, parameter=ACTIVE_PROFILE" }
+String	BUERO_HEIZUNG_SET_POINT_MODE		"Modus [MAP(HM-CC-RT-DN.map):%s]"		<heating>	(BUERO_Heizung)	{ homematic="address=HmIP-STH:252c1307:000E5569A246BE, channel=1, parameter=SET_POINT_MODE" }
 
 // Die Restdauer, sollte sich das Thermostat gerade im Boost befinden
 Number	BUERO_HEIZUNG_BOOST_STATE	"Boost Restdauer [%d min]"			<heating>	(BUERO_Heizung)	{ homematic="address=HmIP-STH:252c1307:000E5569A246BE, channel=1, parameter=BOOST_STATE" }
 
 // Für den Fall, dass das Geraet einen Fehler rueckmeldet
-String	BUERO_HEIZUNG_FAULT_REPORTING	"Fehlerwert [MAP(HM-CC-RT-DN.map):%s]"		<heating>	(BUERO_Heizung)	{ homematic="address=HmIP-STH:252c1307:000E5569A246BE, channel=1, parameter=FAULT_REPORTING" }
+String	BUERO_HEIZUNG_FAULT_REPORTING	"Fehlerwert [MAP(HM-CC-RT-DN.map):%s]"		<heating>	(BUERO_Heizung)	{ homematic="address=HmIP-STH:252c1307:000E5569A246BE, channel=1, parameter=UNREACH" }
 
 // Die Batteriespannung
 Number	BUERO_HEIZUNG_BATTERY_STATE	"Batterie [%.1f V]"				<heating>	(BUERO_Heizung)
