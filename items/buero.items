@@ -17,7 +17,7 @@ Group:Number:AVG        CTRL_Heating
 Group:Number:AVG	Heizkoerper		"Heizkoerper"			<heating>
 
 // Dann erstelle ich eine Gruppe fuer die Badezimmerheizung
-Group		BUERO_Heizung			"Heizung ELW Badezimmer"	<heating>	(BUERO, Heizkoerper)
+Group		BUERO_Heizung			"Heizung Büro"	<heating>	(BUERO, Heizkoerper)
 
 //---------------------------------------------------------------------------------------------------------------
 // Die vier Zustaende, in die ich den Heizkoerper schalten kann
@@ -25,7 +25,7 @@ Group		BUERO_Heizung			"Heizung ELW Badezimmer"	<heating>	(BUERO, Heizkoerper)
 // Darueberhinaus fasse ich sie in der Gruppe CTRL_Heating zusammen
 Group:Number:AVG	CTRL_Heating
 
-Number	BUERO_Scene_Heating		"Modus Heizkoerper Bad"			<sofa>
+Number	BUERO_Scene_Heating		"Modus Heizkoerper Büro"			<sofa>
 
 // Der uebliche Ablauf, wie er in der CCU2 definiert wird
 Switch	BUERO_STATE_AUTO		(CTRL_Heating)		{ homematic="address=HmIP-STH:252c1307:000E5569A246BE, channel=1, parameter=AUTO_MODE" }

@@ -1,0 +1,13 @@
+// buero.items / 11012018
+// Christian Keil <christian.keil@gmail.com>
+// MAP : Buero 
+//
+
+sitemap default label="Darmstadt"
+{
+  Frame label="Büro" {
+    Group item=BUERO_HEIZUNG
+    Setpoint item=BUERO_HEIZUNG_SET_TEMPERATURE minValue=17 maxValue=28 step=0.5
+    Switch item=BUERO_HEIZUNG_Scene_Heating mappings=[0="Normal", 1="Baden", 2="Eco", 3="Comfort"]
+  }
+}
