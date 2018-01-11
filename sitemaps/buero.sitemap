@@ -3,7 +3,7 @@
 // MAP : Buero 
 //
 
-sitemap default label="Darmstadt"
+sitemap buero label="Darmstadt"
 {
   Frame label="Büro" {
     Group item=BUERO_HEIZUNG
